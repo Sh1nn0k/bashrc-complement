@@ -1,3 +1,4 @@
+#
 function set_ps1 {
   local RESET="\[\033[00m\]"
   local BLACK="\[\033[0;30m\]"
@@ -16,7 +17,7 @@ function set_ps1 {
   local CYANBOLD="\[\033[1;36m\]"
   local WHITE="\[\033[0;37m\]"
   local WHITEBOLD="\[\033[1;37m\]"
-export PS1="\n[$RESET$RED\u$RESET$WHITE@$RESET$CYAN\h$RESET]$RESET-[$RESET$PURPLE\w$RESET]$RESET-$BLACKBOLD[\t]$RESET \n➢ \\$"
+export PS1="\n[$RESET$CYAN\u$RESET$WHITE@$RESET$BLUE\h$RESET]$RESET-[$RESET$PURPLE\w$RESET]$RESET-$BLACKBOLD[\t]$RESET\n➢ $RED\\$ $RESET"
 }
 set_ps1
 
